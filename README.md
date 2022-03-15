@@ -2,7 +2,8 @@
 ## Dependencies
 | Package | Usage |
 |---|---|
-|alacritty| |Better terminal emulation|
+|alacritty| Better terminal emulation|
+
 If you want to install these config files to a new system follow these steps
 
 1. Prior to the installation make sure you have committed the alias to your .bashrc or .zsh:
