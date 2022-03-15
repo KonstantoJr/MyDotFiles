@@ -1,7 +1,7 @@
 # MyDotFiles
 ## Dependencies
 | Package | Usage |
-|---| |---|
+|---|---|
 |alacritty| |Better terminal emulation|
 If you want to install these config files to a new system follow these steps
 
