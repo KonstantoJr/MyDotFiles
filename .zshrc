@@ -14,7 +14,7 @@ alias ls='ls -lhNF --color=auto --group-directories-first'
 
 ###############################################################
 #Custom python script
-alias calendar='/home/konstantinos/.mypython/mycalendarscript.py'
+
 #Config alias for git that stores my dots files
 alias config='/usr/bin/git --git-dir=/home/konstantinos/.cfg/ --work-tree=/home/konstantinos'
 
