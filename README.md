@@ -1,10 +1,28 @@
 # MyDotFiles
-## Dependencies
+### Dependencies
 | Package | Usage |
 |---|---|
 |alacritty| Better terminal emulation|
+|zsh | Instead of bash|
+|pulseaudio + pulseaudioctl| Audio drivers and terminal commands audio control|
+|brightnessctl | Terminal commands for backlight control|
+|gscreenshot | Screenshot tool |
+|i3 | My wm of choice|
+|i3status | My status bar of choice|
+|dmenu| For opening up applications|
+|xclip| For storing screenshots in clipboard
+### Custom Keybinds
+Current $mod = WinKey
+| Keys | Function |
+|---|---|
+|$mod + Shift + s| Takes screenshot of a specified area and saves it on clipboard and ~/Pictures/screenshots|
+|$mod + F1 | Mute/Unmute Sound|
+|$mod + F2 | Decrease sound by 5|
+|$mod + F3 | Increase sound by 5|
+|$mod + F11 | Decrease brightness|
+|$mod + F12 | Increse brightness|
 
-If you want to install these config files to a new system follow these steps
+### If you want to install these config files to a new system follow these steps
 
 1. Prior to the installation make sure you have committed the alias to your .bashrc or .zsh:
 ```
