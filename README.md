@@ -4,6 +4,8 @@
 |---|---|
 |alacritty| Better terminal emulation|
 |zsh | Instead of bash|
+|zsh_syntax_highlighting | For highlighting|
+|zsh_autosuggestion| For auto suggestion|
 |pulseaudio + pulseaudioctl| Audio drivers and terminal commands audio control|
 |brightnessctl | Terminal commands for backlight control|
 |gscreenshot | Screenshot tool |
