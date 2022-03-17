@@ -192,7 +192,7 @@ exec --no-startup-id xautolock -time 5 -locker "i3lock -c 000000 && sleep 1" -ki
 exec --no-startup-id caffeine &
 #Custom Keybinds
 #Lock screen
-bindsym $mod+Control+l exec --no-startup-id "i3lock -c 000000"
+bindsym $mod+Control+l exec --no-startup-id "xautolock -locknow"
 #Control Sound
 bindsym $mod+F1 exec --no-startup-id "/usr/bin/pulseaudio-ctl mute &"
 bindsym $mod+F2 exec --no-startup-id "/usr/bin/pulseaudio-ctl down & "
