@@ -11,8 +11,11 @@
 |gscreenshot | Screenshot tool |
 |i3 | My wm of choice|
 |i3status | My status bar of choice|
+|i3lock| For screen locking|
 |dmenu| For opening up applications|
 |xclip| For storing screenshots in clipboard
+|caffeine| Used to disable xautolock if audio is playing|
+
 ### Custom Keybinds
 Current $mod = WinKey
 | Keys | Function |
@@ -23,7 +26,7 @@ Current $mod = WinKey
 |$mod + F3 | Increase sound by 5|
 |$mod + F11 | Decrease brightness|
 |$mod + F12 | Increse brightness|
-
+|$mod +Control + l| Lock screen|
 ### If you want to install these config files to a new system follow these steps
 
 1. Prior to the installation make sure you have committed the alias to your .bashrc or .zsh:
