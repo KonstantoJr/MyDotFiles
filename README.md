@@ -17,6 +17,7 @@
 |caffeine| Used to disable xautolock if audio is playing|
 |nitrogen| Used to controll background images|
 |Brave| Browser of choice|
+|udiskie| For automounting external drives|
 
 ### Custom Keybinds
 Current $mod = WinKey
