@@ -15,7 +15,7 @@
 |dmenu| For opening up applications|
 |xclip| For storing screenshots in clipboard
 |caffeine| Used to disable xautolock if audio is playing|
-
+|nitrogen| Used to controll background images|
 ### Custom Keybinds
 Current $mod = WinKey
 | Keys | Function |
