@@ -30,6 +30,7 @@ Current $mod = WinKey
 |$mod + F11 | Decrease brightness|
 |$mod + F12 | Increse brightness|
 |$mod +Control + l| Lock screen|
+|$mod +Control + b| Change background image|
 ### If you want to install these config files to a new system follow these steps
 
 1. Prior to the installation make sure you have committed the alias to your .bashrc or .zsh:
