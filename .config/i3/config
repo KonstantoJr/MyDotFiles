@@ -205,3 +205,5 @@ bindsym $mod+F11 exec --no-startup-id "brightnessctl -q --min-value=2 set 5%- &"
 bindsym $mod+F12 exec --no-startup-id "brightnessctl -q set 5%+"
 #Screenshot a spesific screen region and saving it to clipboard and $HOME/Pictures/Screenshot folder
 bindsym $mod+Shift+s exec --no-startup-id gscreenshot -s -c -f $HOME/Pictures/screenshots &
+#Change BG image, folder containing bg_images configured in nitrogen
+bindsym $mod+Control+b exec --no-startup-id nitrogen --random --set-scaled &
