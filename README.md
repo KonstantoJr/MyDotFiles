@@ -34,6 +34,7 @@ Current $mod = WinKey
 
 ### Folders
 - .makefiles folder contains usefull makefiles
+- .mypython folder contains python scripts may be in aliased in zshrc (currently none is)
 
 ### If you want to install these config files to a new system follow these steps
 
