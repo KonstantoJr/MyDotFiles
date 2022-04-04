@@ -1,4 +1,4 @@
-MY_FLAGS = -lncurses
+MY_FLAGS = 
 
 TARGET_EXEC ?= main
 
