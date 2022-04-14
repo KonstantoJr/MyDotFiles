@@ -187,12 +187,6 @@ bar {
         font pango:monospace 9
         status_command exec /home/konstantinos/.config/i3status/net-speed.sh  
 }
-#Apps startup
-exec --no-startup-id picom &
-exec --no-startup-id nitrogen --restore &
-exec --no-startup-id xautolock -time 10 -locker "systemctl suspend" &
-exec --no-startup-id caffeine &
-exec --no-startup-id udiskie --no-notify --tray &
 #Custom Keybinds
 #Lock screen
 bindsym $mod+Control+l exec --no-startup-id "i3lock -c 000000"

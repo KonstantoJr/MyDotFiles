@@ -1,2 +1,7 @@
 setxkbmap us
 picom -f &
+setxkbmap -option "caps:escape"
+nitrogen --restore &
+xautolock -time 10 -locker "systemctl suspend" &
+caffeine &
+udiskie --no-notify --tray &
