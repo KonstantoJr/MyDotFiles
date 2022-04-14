@@ -1,4 +1,3 @@
-inoremap jk <ESC>
 let mapleader = "'"
 syntax on " highlight syntax
 set number " show line numbers
