@@ -16,8 +16,9 @@
 |xclip| For storing screenshots in clipboard
 |caffeine| Used to disable xautolock if audio is playing|
 |nitrogen| Used to controll background images|
-|Brave| Browser of choice|
+|Firefox| Browser of choice|
 |udiskie| For automounting external drives|
+|touchegg| For touchscreen gestures|
 
 ### Custom Keybinds
 Current $mod = WinKey
