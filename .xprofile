@@ -6,3 +6,4 @@ udiskie --no-notify --tray &
 setxkbmap -option "caps:escape" &
 setxkbmap us,gr & 
 setxkbmap -option "alt_shift_toggle" &
+touchegg &
