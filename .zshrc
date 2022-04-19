@@ -13,8 +13,8 @@ compinit
 alias ls='ls -lhNF --color=auto --group-directories-first'
 
 ###############################################################
-#Custom python script
-
+#ENV Variables
+export EDITOR=vim
 #Config alias for git that stores my dots files
 alias config='/usr/bin/git --git-dir=/home/konstantinos/.cfg/ --work-tree=/home/konstantinos'
 
@@ -55,5 +55,6 @@ function extract {
     done
 fi
 }
+# zsh extensions below
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
