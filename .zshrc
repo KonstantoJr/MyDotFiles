@@ -13,8 +13,7 @@ compinit
 alias ls='ls -lhNF --color=auto --group-directories-first'
 
 ###############################################################
-#ENV Variables
-export EDITOR=vim
+
 #Config alias for git that stores my dots files
 alias config='/usr/bin/git --git-dir=/home/konstantinos/.cfg/ --work-tree=/home/konstantinos'
 
