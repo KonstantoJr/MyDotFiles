@@ -1,7 +1,8 @@
-setxkbmap us
 picom -f &
-setxkbmap -option "caps:escape"
 nitrogen --restore &
 xautolock -time 10 -locker "systemctl suspend" &
 caffeine &
 udiskie --no-notify --tray &
+setxkbmap -option "caps:escape" &
+setxkbmap us,gr & 
+setxkbmap -option "alt_shift_toggle" &
