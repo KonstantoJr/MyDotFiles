@@ -1,5 +1,5 @@
 # Packages to install with yay
-firefox git tldr man texlive-most alacritty zsh zsh-syntax-highlighting zsh-autosuggestions-git brightnessctl gscreenshot dmenu xclip caffeine-ng nitrogen udiskie picom pulseaudio-ctl vim xorg-xinit xorg-server gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm nodejs touchegg xdotool pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord i3-wm i3status i3lock stremio bluez bluez-utils xautolock mons
+firefox git tldr man texlive-most alacritty zsh zsh-syntax-highlighting zsh-autosuggestions-git brightnessctl gscreenshot dmenu xclip caffeine-ng nitrogen udiskie picom pulseaudio-ctl vim xorg-xinit xorg-server gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm nodejs touchegg xdotool pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord i3-wm i3status i3lock stremio bluez bluez-utils xautolock mons texlive-lang
 # rust installer
 curl https://sh.rustup.rs -sSf | sh
 
