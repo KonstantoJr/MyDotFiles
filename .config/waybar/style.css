@@ -1,88 +1,54 @@
-@define-color background #1d2021;
-@define-color foreground #ebdbb2;
-@define-color yellow #fabd2f;
-@define-color red #fb4934;
-@define-color green #b8bb26;
-
 * {
     border: none;
-    border-radius: 0;
-    font-family: Input, "Font Awesome 6 Free Solid";
-    font-size: 18px;
+    border-radius: 10px;
+    font-family: JetBrains Mono, Symbols Nerd Font;
+    font-size: 15px;
     min-height: 0;
+    transition-property: background-color;
+    transition-duration: .7s;
+    color: #dfbf8e;
 }
 
-window#waybar {
-    background: @background;
-    color: @foreground;
-    transition-property: background-color;
-    transition-duration: 0.5s;
+#waybar {
+    background-color: #282828;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#workspaces {
+    margin: 5px;
 }
 
 #workspaces button {
-    padding: 0 10px;
-    background: transparent;
-    color: @foreground;
-    border-top: 3px solid @background;
-    border-bottom: 3px solid transparent;
+    margin: 0px 5px;
+    background-color: #5d3535;
+}
+
+#workspaces button:hover {
+    background: #b86767;
 }
 
 #workspaces button.focused {
-    border-bottom: 3px solid @green;
+    background-color: #8d5050;
 }
 
 #workspaces button.urgent {
-    border-bottom: 3px solid @yellow;
+    background-color: #ff3333;
 }
 
-#mode {
-    background-color: @background;
-    border-top: 3px solid @background;
-    border-bottom: 3px solid @red;
-}
-
-#battery.warning,
-#disk.warning,
-#memory.warning,
-#cpu.warning {
-    border-top: 3px solid @background;
-    border-bottom: 3px solid @yellow;
-}
-
-#battery.critical,
-#disk.critical,
-#memory.critical,
-#cpu.critical {
-    border-top: 3px solid @background;
-    border-bottom: 3px solid @red;
-}
-
-#battery.charging {
-    border-top: 3px solid @background;
-    border-bottom: 3px solid @green;
-}
-
-#mode,
-#pulseaudio,
-#network,
+#clock,
+#battery,
 #cpu,
 #disk,
 #memory,
+#temperature,
 #backlight,
-#battery,
-#clock {
-    padding: 0 6px;
-    margin: 0 6px;
-}
-
-#custom-vpn,
-#custom-dnd,
-#language,
-#custom-recording {
-    padding: 0;
-    margin: 0 6px;
-}
-
-#tray {
-    margin-left: -1000000px;
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#date {
+    padding: 0 15px;
+    margin: 5px 5px;
+    background-color: #5d3535;
 }

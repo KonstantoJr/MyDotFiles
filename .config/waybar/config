@@ -1,93 +1,86 @@
 {
     "layer": "top",
-    "height": 30,
+    "position": "top",
+    "height": 40,
     "modules-left": [
         "sway/workspaces",
-        "sway/mode"
-    ],
-    "modules-center": [
         "sway/window"
     ],
+    "modules-center": [
+        "clock"
+    ],
     "modules-right": [
-        "pulseaudio",
         "network",
-        "cpu",
-        "memory",
         "disk",
-        "backlight",
+        "memory",
+        "cpu",
         "battery",
-        "clock",
+        "pulseaudio",
         "tray"
     ],
-    "tray":{
-        "icon-size": 21,
-        "spacing": 10,
-        "show-passive-items":true
-    },
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "<span foreground='#928374'></span> {:%a, %d %b  <span foreground='#928374'></span> %H:%M}"
+        "interval": 1,
+        "tooltip-format": "<big>{:%d %B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%d %B %H:%M:%S}"
     },
     "cpu": {
-        "format": "<span foreground='#928374'></span> {usage}%",
-        "states": {
-            "warning": 70,
-            "critical": 90
-        }
+        "format": "{usage}% ",
+        "tooltip": false
     },
     "disk": {
-        "format": "<span foreground='#928374'></span> {percentage_free}%",
-        "states": {
-            "warning": 70,
-            "critical": 90
-        }
+        "interval": 30,
+        "format": "{free} ",
+        "on-click": "alacritty sh -c 'duf && sleep 100'"
     },
     "memory": {
-        "format": "<span foreground='#928374'></span> {}%",
-        "states": {
-            "warning": 70,
-            "critical": 90
-        }
+        "interval": 5,
+        "format": "{used:0.2f}GB/{total:0.2f}GB ",
+        "tooltip-format": "available {avail:0.2f}GB",
+        "on-click": "~/.config/scripts/cache-clean.sh"
     },
-    "backlight": {
-        "format": "<span foreground='#928374'>{icon}</span> {percent}%",
-        "format-icons": [
-            ""
-        ]
+    "network": {
+        "interval": 3,
+        "format-wifi": "{ipaddr}",
+        "format-ethernet": "{ipaddr}",
+        "format-disconnected": "Disconnected ⚠",
+        "on-click": "alacritty nmtui"
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "婢",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "default": [
+                "",
+                ""
+            ]
+        },
+        "on-click-right": "pavucontrol",
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     },
     "battery": {
-        "bat": "BAT0",
-        "design-capacity": true,
+        "interval": 2,
         "states": {
             "warning": 30,
             "critical": 15
         },
-        "format": "<span foreground='#928374'>{icon}</span> {capacity}%",
-        "format-charging": "<span foreground='#928374'></span> {capacity}%",
+        "format": "{capacity} {icon}",
         "format-icons": [
             "",
             "",
             "",
             "",
             ""
-        ]
+        ],
+        "format-charging": "{capacity} {icon} ﮣ",
+        "max-length": 25
     },
-    "network": {
-        "interval": 2,
-        "interface": "wlp4s0",
-        "format-wifi": "<span foreground='#928374'></span> {essid}",
-        "format-ethernet": "<span foreground='#928374'></span> {ifname}",
-        "format-linked": "<span foreground='#928374'></span> {ifname}",
-        "format-disconnected": " <span foreground='#928374'></span> ",
-        "tooltip-format": "{ifname}: {ipaddr}/{cidr}\n {bandwidthDownBits}\n {bandwidthUpBits}"
-    },
-    "pulseaudio": {
-        "format": "<span foreground='#928374'>{icon}</span> {volume}%   {format_source}",
-        "format-bluetooth": "<span foreground='#928374'>{icon}</span> {volume}%   {format_source}",
-        "format-bluetooth-muted": "<span foreground='#928374'> {icon}</span>   {format_source}",
-        "format-muted": "<span foreground='#928374'></span>   {format_source}",
-        "format-source": "<span foreground='#928374'></span> {volume}%",
-        "format-source-muted": "<span foreground='#928374'></span>",
-        "on-click": "pavucontrol"
-    } 
+    "sway/workspaces": {
+        "format": "{name}",
+        "disable-scroll-wraparound": true
+    }
 }
