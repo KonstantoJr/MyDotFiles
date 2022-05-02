@@ -15,6 +15,7 @@
         "memory",
         "cpu",
         "battery",
+        "backlight",
         "pulseaudio",
         "tray"
     ],
@@ -44,6 +45,13 @@
         "format-ethernet": "{ipaddr}",
         "format-disconnected": "Disconnected ⚠",
         "on-click": "alacritty nmtui"
+    },
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": [
+            "",
+            ""
+        ]
     },
     "pulseaudio": {
         "scroll-step": 5,
