@@ -52,7 +52,7 @@ output eDP-1 pos 0 0 res 1920x1080 bg $bg_img fill #FAFAFA
 # resumed. It will also lock your screen before your computer goes to sleep.
 exec swayidle -w \
         before-sleep 'swaylock -C ~/.config/swaylock/config' \
-        timeout 300 'systemctl suspend' \
+        timeout 180 'systemctl suspend' \
         resume 'swaymsg "output * dpms on"'
 ### Input configuration
 #
@@ -73,6 +73,7 @@ input type:keyboard {
 }
 input type:touchpad {
     natural_scroll enabled
+    tap enable
 }
 ### Key bindings
 #
@@ -239,5 +240,9 @@ bar {
     swaybar_command waybar
 }
 #Starting Apps
+# Notification Manager
 exec_always --no-startup-id mako -c ~/.config/mako/config
+# Clipboard Manager
+exec wl-paste -t text --watch clipman store --no-persist
+exec udiskie
 include /etc/sway/config.d/*
