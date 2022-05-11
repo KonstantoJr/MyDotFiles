@@ -13,7 +13,8 @@ compinit
 alias ls='ls -lhNF --color=auto --group-directories-first'
 
 ###############################################################
-
+#Custom alias for scripts
+alias rsyncAuto='~/.mypython/rsyncScript.py'
 #Config alias for git that stores my dots files
 alias config='/usr/bin/git --git-dir=/home/konstantinos/.cfg/ --work-tree=/home/konstantinos'
 
