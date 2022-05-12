@@ -1,4 +1,7 @@
 #! /usr/bin/python3
+# Script to sync current computer dirs with a given remote
+# The path files need to be at the home directory of the user 
+# named .dirsToSync (default) 
 import os
 import argparse
 DEFAULT_PATH = os.path.expanduser("~") + "/.dirsToSync"
