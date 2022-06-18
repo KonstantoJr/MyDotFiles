@@ -87,3 +87,13 @@ config add .bashrc
 config commit -m "Add bashrc"
 config push
 ```
+
+### System Installation
+The following line contains the packages needed for system installation
+```
+firefox git tldr man texlive-most alacritty zsh zsh-syntax-highlighting zsh-autosuggestions-git brightnessctl gscreenshot dmenu xclip caffeine-ng nitrogen udiskie picom pulseaudio-ctl vim xorg-xinit xorg-server gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm nodejs touchegg xdotool pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord i3-wm i3status i3lock stremio bluez bluez-utils xautolock mons texlive-lang entr zathura-pdf-poppler
+```
+Rust Installer
+```
+curl https://sh.rustup.rs -sSf | sh
+```
