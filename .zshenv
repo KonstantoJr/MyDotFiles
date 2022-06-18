@@ -1,7 +1,7 @@
 # . "$HOME/.cargo/env"
 
-export EDITOR vim
-export TERM alacritty
+export EDITOR=vim
+export TERM=alacritty
 
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
