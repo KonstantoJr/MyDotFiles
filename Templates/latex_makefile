@@ -2,7 +2,7 @@
 
 all:
 		mkdir -p build
-			pdflatex -output-directory=build example.tex
+			pdflatex -output-directory=build report.tex
 
 watch:
 		ls *.tex | entr -r make
