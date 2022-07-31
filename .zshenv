@@ -8,3 +8,4 @@ if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
 else 
     export MOZ_ENABLE_WAYLAND=0
 fi
+source $HOME/.cargo/env

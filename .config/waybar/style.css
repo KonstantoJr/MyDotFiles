@@ -10,7 +10,7 @@
 }
 
 #waybar {
-    background-color: #282828;
+    background-color: #282a36;
     border-radius: 0px 0px 10px 10px;
 }
 
@@ -20,19 +20,19 @@
 
 #workspaces button {
     margin: 0px 5px;
-    background-color: #5d3535;
+    background-color: #44475a;
 }
 
 #workspaces button:hover {
-    background: #b86767;
+    background: #44475a;
 }
 
 #workspaces button.focused {
-    background-color: #8d5050;
+    background-color: #6272a4;
 }
 
 #workspaces button.urgent {
-    background-color: #ff3333;
+    background-color: #ff5555;
 }
 
 #clock,
@@ -51,5 +51,5 @@
 #language {
     padding: 0 12px;
     margin: 2px 2px;
-    background-color: #5d3535;
+    background-color: #44475a;
 }
