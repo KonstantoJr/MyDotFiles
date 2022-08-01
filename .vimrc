@@ -11,7 +11,11 @@ set smartindent
 set expandtab
 set tabstop=4
 set clipboard+=unnamedplus
+" Workaround for copy pasting to clipboard
+" xnoremap <silent> <C-c> :w !wl-copy<CR><CR>
+" inoremap <silent> <C-v> :w !wl-paste<CR><CR>
 :set mouse=a
+" Plug plugins
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -23,3 +27,4 @@ Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/tpope/vim-fugitive'
 call plug#end()
+
