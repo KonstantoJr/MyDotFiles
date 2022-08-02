@@ -9,33 +9,23 @@
 |pulseaudio + pulseaudioctl| Audio drivers and terminal commands audio control|
 |brightnessctl | Terminal commands for backlight control|
 |gscreenshot | Screenshot tool |
-|i3 | My wm of choice|
-|i3status | My status bar of choice|
-|i3lock| For screen locking|
-|dmenu| For opening up applications|
-|xclip| For storing screenshots in clipboard
-|caffeine| Used to disable xautolock if audio is playing|
-|nitrogen| Used to controll background images|
+| sway | My wm of choice|
+|waybar | My status bar of choice|
+|swaylock| For screen locking|
+|sway-dekstop-launcher| For opening up applications|
+|clipman| For storing screenshots in clipboard
 |Firefox| Browser of choice|
 |udiskie| For automounting external drives|
-|touchegg| For touchscreen gestures|
+|mako| Notification Manager|
+|wofi| Used for clipboard history|
 
 ### Custom Keybinds
 Current $mod = WinKey
 | Keys | Function |
 |---|---|
 |$mod + Shift + s| Takes screenshot of a specified area and saves it on clipboard and ~/Pictures/screenshots|
-|$mod + F1 | Mute/Unmute Sound|
-|$mod + F2 | Decrease sound by 5|
-|$mod + F3 | Increase sound by 5|
-|$mod + F11 | Decrease brightness|
-|$mod + F12 | Increse brightness|
-|$mod + Control + l| Lock screen|
-|$mod + Control + b| Change background image|
+|$mod + h| Open wofi and show past clipboard history|
 
-### Folders
-- .makefiles folder contains usefull makefiles
-- .mypython folder contains python scripts may be in aliased in zshrc (currently none is)
 
 ### If you want to install these config files to a new system follow these steps
 
@@ -91,7 +81,7 @@ config push
 ### System Installation
 The following line contains the packages needed for system installation
 ```
-firefox git tldr man texlive-most alacritty zsh zsh-syntax-highlighting zsh-autosuggestions-git brightnessctl gscreenshot dmenu xclip caffeine-ng nitrogen udiskie picom pulseaudio-ctl vim xorg-xinit xorg-server gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm nodejs touchegg xdotool pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord i3-wm i3status i3lock stremio bluez bluez-utils xautolock mons texlive-lang entr zathura-pdf-poppler
+firefox git tldr man texlive-most alacritty zsh zsh-syntax-highlighting zsh-autosuggestions-git brightnessctl gscreenshot slurp grim sway-laucnher-desktop clipman wl-clipboard caffeine-ng udiskie pulseaudio-ctl nvim gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm nodejs pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord stremio bluez bluez-utils mons texlive-lang entr zathura-pdf-poppler wl-recorder ttf-font-awesome ttf-gentium-basic ttf-jetbrains-mono docker docker-compose entr fakeroot feh firefox flex gentium-plus-font github-cli  libreoffice-fresh make man-db mariadb mons postgresql pulseaudio-ctl python-autopep8-git python-gensim python-nltk python-paho-mqtt python-pexpect python-pulp python-pygame python-scikit-learn python-seaborn python-selenium python-toml python-tqdm rsync sent skypeforlinux-stable-bin slurp speedtest-cli sqlitebrowser steam tikzit acpi
 ```
 Rust Installer
 ```
