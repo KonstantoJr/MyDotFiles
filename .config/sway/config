@@ -216,9 +216,11 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 #
+
 # Custom Keybinds
 bindsym $mod+h exec clipman pick --tool="wofi" --max-items=30 --histpath="~/.local/share/clipman.json"
-#
+bindsym $mod+Control+r exec $HOME/.config/sway/scripts/record.sh 
+
 #Lock
 bindsym $mod+Control+l exec swaylock -C ~/.config/swaylock/config 
 #Screenshot tool
