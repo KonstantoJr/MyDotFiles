@@ -1,0 +1,10 @@
+max-visible=5
+sort=+time
+anchor=top-right
+font=JetBrains Mono
+background-color=#282828
+text-color=#dfbf83
+border-size=2
+border-color=#8d5050
+border-radius=10
+default-timeout=60000
