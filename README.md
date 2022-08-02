@@ -25,7 +25,7 @@ Current $mod = WinKey
 |---|---|
 |$mod + Shift + s| Takes screenshot of a specified area and saves it on clipboard and ~/Pictures/screenshots|
 |$mod + h| Open wofi and show past clipboard history|
-
+|$mod + Control + r| Press one to start recording the selected area, Press a second time to stop the recording|
 
 ### If you want to install these config files to a new system follow these steps
 
