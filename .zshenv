@@ -1,6 +1,6 @@
 # . "$HOME/.cargo/env"
 
-export EDITOR=vim
+export EDITOR=nvim
 export TERM=alacritty
 
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
