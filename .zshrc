@@ -11,7 +11,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 alias ls='ls -lhNF --color=auto --group-directories-first'
-
+alias vim='nvim'
 ###############################################################
 #Custom alias for scripts
 alias rsyncAuto='~/.scripts/rsyncScript.py'
