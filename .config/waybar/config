@@ -34,20 +34,20 @@
         "path":"/",
         "interval": 30,
         "format": "{free} ",
-        "on-click": "alacritty sh -c 'duf && sleep 100'"
+        "on-click": "alacritty --command sh -c 'duf && sleep 100'"
     },
     "memory": {
         "interval": 5,
         "format": "{used:0.2f}GB/{total:0.2f}GB ",
         "tooltip-format": "available {avail:0.2f}GB",
-        "on-click": "~/.config/scripts/cache-clean.sh"
     },
-    "network": {
-        "interval": 3,
-        "format-wifi": "{ipaddr}",
-        "format-ethernet": "{ipaddr}",
-        "format-disconnected": "Disconnected ⚠",
-        "on-click": "alacritty nmtui"
+    "network": {  
+	    "format": "{ifname}",
+    	"format-wifi": "{essid} ({signalStrength}%) ",
+    	"format-ethernet": "{ifname} ",
+    	"format-disconnected": "", //An empty format will hide the module.
+    	"tooltip-format": "{ipaddr}",
+        "on-click": "alacritty --command nmtui",
     },
     "backlight": {
         "format": "{percent}% {icon}",
@@ -79,7 +79,7 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{capacity} {icon}",
+        "format": "{capacity} {icon} ",
         "format-icons": [
             "",
             "",
@@ -88,7 +88,7 @@
             ""
         ],
         "format-charging": "{capacity} {icon} ﮣ",
-        "max-length": 25
+        //"max-length": 25
     },
     "sway/workspaces": {
         "format": "{name}",
@@ -96,10 +96,9 @@
     },
     "bluetooth": {
 	"format": " {status}",
-	"format-connected": " {device_alias}",
-	"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+	"format-connected-battery": " {device_alias} {device_battery_percentage}% , {num_connections}",
+	"format-connected": " {device_alias} , {num_connections}",
     "format-off": " {status}",
-	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
 	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
 	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
