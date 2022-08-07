@@ -4,7 +4,7 @@
     "height": 40,
     "modules-left": [
         "sway/workspaces",
-        "sway/window"
+        "sway/window",
     ],
     "modules-center": [
         "clock"
@@ -17,6 +17,7 @@
         "battery",
         "backlight",
         "pulseaudio",
+        "bluetooth",
         "sway/language",
         "tray"
     ],
@@ -30,7 +31,7 @@
         "tooltip": false
     },
     "disk": {
-        "path":"/home",
+        "path":"/",
         "interval": 30,
         "format": "{free} ",
         "on-click": "alacritty sh -c 'duf && sleep 100'"
@@ -58,7 +59,7 @@
     "pulseaudio": {
         "scroll-step": 5,
         "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% ",
         "format-muted": "婢",
         "format-icons": {
             "headphones": "",
@@ -92,5 +93,16 @@
     "sway/workspaces": {
         "format": "{name}",
         "disable-scroll-wraparound": true
-    }
+    },
+    "bluetooth": {
+	"format": " {status}",
+	"format-connected": " {device_alias}",
+	"format-connected-battery": " {device_alias} {device_battery_percentage}%",
+    "format-off": " {status}",
+	// "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+    },
 }
