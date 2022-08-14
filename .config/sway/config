@@ -57,7 +57,7 @@ workspace 4 output HDMI-A-2
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 exec swayidle -w \
-               before-sleep 'playerctl -a pause 2>&1  && swaylock -C ~/.config/swaylock/config'
+               before-sleep '~/.config/scripts/before_sleep'
 ### Input configuration#
 # Example configuration:
 #
