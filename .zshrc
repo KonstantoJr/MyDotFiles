@@ -15,6 +15,7 @@ alias vim='nvim'
 ###############################################################
 #Custom alias for scripts
 alias rsyncAuto='~/.scripts/rsyncScript.py'
+alias firefoxSharing='~/.scripts/launch_firefox_for_sharing'
 #Config alias for git that stores my dots files
 alias config='/usr/bin/git --git-dir=/home/konstantinos/.cfg/ --work-tree=/home/konstantinos'
 
