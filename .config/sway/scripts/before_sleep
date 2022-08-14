@@ -1,0 +1,4 @@
+#!/bin/sh
+
+playerctl -a pause
+swaylock -C ~/.config/swaylock/config
