@@ -241,7 +241,8 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioStop exec playerctl stop
 #Random BG Image
 bindsym $mod+Control+b exec ~/.config/sway/scripts/bg_chooser
-#Idling
+#Emoji picker
+bindsym $mod+m exec rofimoji
 # Status Bar:
 bar {
     swaybar_command waybar
