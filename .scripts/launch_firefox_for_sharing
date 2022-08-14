@@ -1,0 +1,3 @@
+#!/bin/sh
+kill $(pidof firefox)
+MOZ_ENABLE_WAYLAND=0 && firefox & 
