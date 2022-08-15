@@ -4,8 +4,6 @@
 |---|---|
 |alacritty| Better terminal emulation|
 |zsh | Instead of bash|
-|zsh_syntax_highlighting | For highlighting|
-|zsh_autosuggestion| For auto suggestion|
 |pulseaudio + pulseaudioctl| Audio drivers and terminal commands audio control|
 |brightnessctl | Terminal commands for backlight control|
 |gscreenshot | Screenshot tool |
@@ -27,6 +25,7 @@ Current $mod = WinKey
 |$mod + h| Open wofi and show past clipboard history|
 |$mod + Control + r| Press one to start recording the selected area, Press a second time to stop the recording|
 |$mod + Control + b | Randomly select another background|
+|$mod + o| Toggle showing/hiding waybar|
 ### If you want to install these config files to a new system follow these steps
 
 1. Prior to the installation make sure you have committed the alias to your .bashrc or .zsh:
