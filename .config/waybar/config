@@ -1,7 +1,12 @@
 {
-    "layer": "top",
-    "position": "top",
-    "height": 40,
+    "bar_id": "bar-0",
+    //"ipc": true,
+
+    //"layer": "top",
+    //"position": "top",
+    //"height": 40,
+
+
     "modules-left": [
         "sway/workspaces",
         "sway/window",

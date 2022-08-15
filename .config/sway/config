@@ -38,7 +38,7 @@ output eDP-1 pos 0 0 res 1920x1080
 output HDMI-A-2 pos +1920 0 res 2560x1440
 # Start dynacim wallpaper
 
-exec ~/.config/sway/scripts/dynacim_wallpaper
+exec ~/.config/sway/scripts/dynamic_wallpaper
 
 workspace 1 output eDP-1
 workspace 2 output eDP-1
@@ -220,7 +220,7 @@ bindsym $mod+r mode "resize"
 # Custom Keybinds
 bindsym $mod+h exec clipman pick --tool="wofi" --max-items=30 --histpath="~/.local/share/clipman.json"
 bindsym $mod+Control+r exec $HOME/.config/sway/scripts/record.sh 
-
+bindsym $mod+o exec killall -SIGUSR1 waybar
 #Lock
 bindsym $mod+Control+l exec swaylock -C ~/.config/swaylock/config 
 #Screenshot tool
@@ -246,6 +246,7 @@ bindsym $mod+m exec rofimoji
 # Status Bar:
 bar {
     swaybar_command waybar
+    position top
 }
 #Starting Apps
 # Notification Manager

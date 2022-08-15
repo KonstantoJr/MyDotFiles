@@ -1,10 +1,10 @@
 #!/bin/sh
 
-swaybg -i $(find ~/Pictures/bg_images/. -type f | shuf -n1) -m fill &
+swaybg -i $(find ~/Pictures/bg_images/. -type f | shuf -n1) -m fit &
 
 while true; do
     sleep 600
     kill $(pidof swaybg)
     sleep 1
-    swaybg -i $(find ~/Pictures/bg_images/. -type f | shuf -n1) -m fill & 
+    swaybg -i $(find ~/Pictures/bg_images/. -type f | shuf -n1) -m fit & 
 done

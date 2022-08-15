@@ -1,3 +1,3 @@
 #!/bin/sh
 kill $(pidof swaybg)
-swaybg -i $(find ~/Pictures/bg_images/. -type f | shuf -n1) -m fill & 
+swaybg -i $(find ~/Pictures/bg_images/. -type f | shuf -n1) -m fit & 
