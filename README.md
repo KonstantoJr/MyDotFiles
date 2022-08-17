@@ -2,7 +2,7 @@
 ### Dependencies
 | Package | Usage |
 |---|---|
-|alacritty| Better terminal emulation|
+|kitty| Terminal emulator of choice |
 |zsh | Instead of bash|
 |pulseaudio + pulseaudioctl| Audio drivers and terminal commands audio control|
 |brightnessctl | Terminal commands for backlight control|
@@ -16,6 +16,7 @@
 |udiskie| For automounting external drives|
 |mako| Notification Manager|
 |wofi| Used for clipboard history|
+|lf|Terminal file manager|
 
 ### Custom Keybinds
 Current $mod = WinKey
@@ -80,7 +81,7 @@ config push
 ### System Installation
 The following line contains the packages needed for system installation
 ```
-firefox git tldr man texlive-most alacritty zsh zsh-syntax-highlighting zsh-autosuggestions-git brightnessctl gscreenshot slurp grim sway-launcher-desktop clipman wl-clipboard caffeine-ng udiskie pulseaudio-ctl neovim gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord stremio bluez bluez-utils mons texlive-lang entr zathura-pdf-poppler wf-recorder ttf-font-awesome ttf-gentium-basic ttf-jetbrains-mono docker docker-compose entr fakeroot feh firefox flex gentium-plus-font github-cli  libreoffice-fresh make man-db mariadb mons postgresql pulseaudio-ctl python-autopep8-git python-toml rsync sent skypeforlinux-stable-bin slurp speedtest-cli sqlitebrowser steam tikzit acpi mako mtpfs jmtpfs gvfs-mtp gvfs-gphoto2 sway waybar udiskie swaybg swayidle swaylock-effects-git xorg-xwayland ranger pulseaudio-bluetooth bluez-tools playerctl
+firefox git tldr man texlive-most kitty zsh zsh-syntax-highlighting zsh-autosuggestions-git brightnessctl gscreenshot slurp grim sway-launcher-desktop clipman wl-clipboard caffeine-ng udiskie pulseaudio-ctl neovim gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord stremio bluez bluez-utils mons texlive-lang entr zathura-pdf-poppler wf-recorder ttf-font-awesome ttf-gentium-basic ttf-jetbrains-mono docker docker-compose entr fakeroot feh firefox flex gentium-plus-font github-cli  libreoffice-fresh make man-db mariadb mons postgresql pulseaudio-ctl python-autopep8-git python-toml rsync sent skypeforlinux-stable-bin slurp speedtest-cli sqlitebrowser steam tikzit acpi mako mtpfs jmtpfs gvfs-mtp gvfs-gphoto2 sway waybar udiskie swaybg swayidle swaylock-effects-git xorg-xwayland ranger pulseaudio-bluetooth bluez-tools playerctl stpv-git lf
 ```
 Rust Installer
 ```
