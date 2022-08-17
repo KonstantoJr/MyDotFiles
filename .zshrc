@@ -12,6 +12,22 @@ compinit
 # End of lines added by compinstall
 alias ls='ls -lhNF --color=auto --group-directories-first'
 alias vim='nvim'
+# lfcd
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        if [ -d "$dir" ]; then
+            if [ "$dir" != "$(pwd)" ]; then
+                cd "$dir"
+            fi
+        fi
+    fi
+}
+bindkey -s '^o' 'lfcd\n'
+alias lf=lfcd
 ###############################################################
 #Custom alias for scripts
 alias rsyncAuto='~/.scripts/rsyncScript.py'
