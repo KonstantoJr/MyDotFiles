@@ -27,7 +27,7 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
-alias lf=lfcd
+#alias lf=lfcd
 ###############################################################
 #Custom alias for scripts
 alias rsyncAuto='~/.scripts/rsyncScript.py'
