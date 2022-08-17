@@ -13,7 +13,7 @@ set $mod Mod4
 # set $up k
 # set $right l
 # Your preferred terminal emulator
-set $term alacritty
+set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -57,7 +57,7 @@ workspace 4 output HDMI-A-2
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 exec swayidle -w \
-               before-sleep '~/.config/scripts/before_sleep'
+               before-sleep '~/.config/sway/scripts/before_sleep'
 ### Input configuration#
 # Example configuration:
 #
