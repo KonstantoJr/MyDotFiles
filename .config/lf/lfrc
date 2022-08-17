@@ -1,0 +1,10 @@
+set hidden true
+set ignorecase true
+set icons true
+
+cmd open $set -f; rifle -p 0 $fx
+
+set previewer stpv
+set cleaner stpvimgclr
+&stpvimg --listen $id
+cmd on-quit $stpvimg --end $id
