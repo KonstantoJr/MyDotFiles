@@ -4,6 +4,5 @@ xautolock -time 10 -locker "systemctl suspend" &
 caffeine &
 udiskie --no-notify --tray &
 setxkbmap -layout us,gr -option "caps:escape" , "grp:alt_shift_toggle"
-touchegg &
 xrandr --output HDMI-0 --auto --right-of DP-0 &
-xrandr --output DP-0 --mode 1920x1080 --rate 144 & 
+xrandr --output DP-0 --primary --mode 1920x1080 --rate 144 & 
