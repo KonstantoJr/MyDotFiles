@@ -158,6 +158,7 @@ nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
 nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
+"
 nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
 nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
@@ -175,6 +176,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/tpope/vim-fugitive'
+Plug 'mangeshrex/everblush.vim'
 call plug#end()
+" Set the background theme to dark
 
+colorscheme everblush
+set background = "dark"
+" Don't forget set the airline theme as well.
+let g:airline_theme = 'dark'
+
+set termguicolors
