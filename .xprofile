@@ -3,7 +3,7 @@ nitrogen --restore &
 xautolock -time 10 -locker "systemctl suspend" &
 caffeine &
 udiskie --no-notify --tray &
-setxkbmap -option "caps:escape" &
-setxkbmap us,gr & 
-setxkbmap -option "alt_shift_toggle" &
+setxkbmap -layout us,gr -option "caps:escape" , "grp:alt_shift_toggle"
 touchegg &
+xrandr --output HDMI-0 --auto --right-of DP-0 &
+xrandr --output DP-0 --mode 1920x1080 --rate 144 & 
