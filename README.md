@@ -1,38 +1,14 @@
 # MyDotFiles
-### Dependencies
-| Package | Usage |
-|---|---|
-|alacritty| Better terminal emulation|
-|zsh | Instead of bash|
-|zsh_syntax_highlighting | For highlighting|
-|zsh_autosuggestion| For auto suggestion|
-|pulseaudio + pulseaudioctl| Audio drivers and terminal commands audio control|
-|brightnessctl | Terminal commands for backlight control|
-|gscreenshot | Screenshot tool |
-|i3 | My wm of choice|
-|i3status | My status bar of choice|
-|i3lock| For screen locking|
-|dmenu| For opening up applications|
-|xclip| For storing screenshots in clipboard
-|caffeine| Used to disable xautolock if audio is playing|
-|nitrogen| Used to controll background images|
-|Firefox| Browser of choice|
-|udiskie| For automounting external drives|
-|touchegg| For touchscreen gestures|
 
 ### Custom Keybinds
 Current $mod = WinKey
 | Keys | Function |
 |---|---|
 |$mod + Shift + s| Takes screenshot of a specified area and saves it on clipboard and ~/Pictures/screenshots|
-|$mod + F1 | Mute/Unmute Sound|
-|$mod + F2 | Decrease sound by 5|
-|$mod + F3 | Increase sound by 5|
-|$mod + F11 | Decrease brightness|
-|$mod + F12 | Increse brightness|
 |$mod + Control + l| Lock screen|
 |$mod + Control + b| Change background image|
-
+|$mod + c | Open clipboard selector|
+|$mod + m | Open emoji selector|
 ### If you want to install these config files to a new system follow these steps
 
 1. Prior to the installation make sure you have committed the alias to your .bashrc or .zsh:
@@ -87,7 +63,7 @@ config push
 ### System Installation
 The following line contains the packages needed for system installation
 ```
-firefox git tldr man texlive-most alacritty zsh zsh-syntax-highlighting zsh-autosuggestions-git brightnessctl gscreenshot dmenu xclip caffeine-ng nitrogen udiskie picom pulseaudio-ctl vim xorg-xinit xorg-server gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm nodejs touchegg xdotool pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord i3-wm i3status i3lock stremio bluez bluez-utils xautolock mons texlive-lang entr zathura-pdf-poppler
+firefox git tldr man texlive-most alacritty zsh zsh-syntax-highlighting zsh-autosuggestions-git gscreenshot rofi xclip caffeine-ng nitrogen udiskie picom pulseaudio-ctl neovim xorg-xinit xorg-server gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord i3-wm i3status i3lock stremio bluez bluez-utils xautolock mons texlive-lang entr zathura-pdf-poppler rofi-emoji ttf-font-awesome ttf-gentium-basic ttf-jetbrains-mono docker docker-compose mariadb postgresql github-cli python-autopep8-git python-toml rsync sent skypeforlinux-stable-bin speedtest-cli sqlitebrowser
 ```
 Rust Installer
 ```
