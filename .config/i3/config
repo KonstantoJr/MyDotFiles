@@ -34,7 +34,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 # exec --no-startup-id nm-applet
 # Select Random Background on startup
-exec --no-startup-id nitrogen --random --set-auto --save --head=0 && nitrogen --random --set-auto --save --head=1 &
+exec --no-startup-id feh --randomize --bg-fill ~/Pictures/bg_images/*
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -206,7 +206,7 @@ bindsym $mod+F12 exec --no-startup-id "brightnessctl -q set 5%+"
 #Screenshot a spesific screen region and saving it to clipboard and $HOME/Pictures/Screenshot folder
 bindsym $mod+Shift+s exec --no-startup-id gscreenshot -s -c -f $HOME/Pictures/screenshots &
 #Change BG image, folder containing bg_images configured in nitrogen
-bindsym $mod+Control+b exec --no-startup-id nitrogen --random --set-auto --save --head=0 && nitrogen --random --set-auto --save --head=1 &
+bindsym $mod+Control+b exec --no-startup-id feh --randomize --bg-fill ~/Pictures/bg_images/* & 
 bindsym $mod+m exec rofi -modi emoji -show emoji -emoji-format '{emoji}' -theme ~/.config/rofi/launchers/type-4/style-3.rasi
 
 # clipboard tool

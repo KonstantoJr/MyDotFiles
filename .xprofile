@@ -1,6 +1,5 @@
 picom -f &
 dunst &
-nitrogen --restore &
 xautolock -time 10 -locker "systemctl suspend" &
 caffeine &
 udiskie --no-notify --tray &
