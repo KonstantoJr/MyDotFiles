@@ -34,19 +34,19 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 # exec --no-startup-id nm-applet
 # Dynamic background switch every 20 minutes
-exec --no-startup-id watch 1200 feh --randomize --bg-fill '~/Pictures/bg_images/*'
+exec --no-startup-id watch -n 1200 feh --randomize --bg-center '~/Pictures/bg_images/*' &
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5 && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volumedown && $refresh_i3status
+bindsym XF86AudioMute exec --no-startup-id pamixer -t && $refresh_i3status
+bindsym XF86AudioMicMute exec --no-startup-id pamixer --default-source -t  && $refresh_i3status
 #Media Control
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioPause exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
-bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86AudioStop exec playerctl stop
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioPause exec--no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+bindsym XF86AudioStop exec --no-startup-id playerctl stop
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -206,7 +206,7 @@ bindsym $mod+F12 exec --no-startup-id "brightnessctl -q set 5%+"
 #Screenshot a spesific screen region and saving it to clipboard and $HOME/Pictures/Screenshot folder
 bindsym $mod+Shift+s exec --no-startup-id gscreenshot -s -c -f $HOME/Pictures/screenshots &
 #Change BG image, folder containing bg_images configured in nitrogen
-bindsym $mod+Control+b exec --no-startup-id feh --randomize --bg-fill ~/Pictures/bg_images/* & 
+bindsym $mod+Control+b exec --no-startup-id feh --randomize --bg-center ~/Pictures/bg_images/* & 
 bindsym $mod+m exec rofi -modi emoji -show emoji -emoji-format '{emoji}' -theme ~/.config/rofi/launchers/type-4/style-3.rasi
 
 # clipboard tool

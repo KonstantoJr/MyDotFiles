@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pamixer -d 5
-if [ "$(pamixer --get-volume)" -lt "22" ]; then
-pamixer --set-volume 22
+if [ "$(pamixer --get-volume)" -lt "25" ]; then
+pamixer --set-volume 25
 fi
 
