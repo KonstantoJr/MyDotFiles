@@ -1,0 +1,6 @@
+{
+    "coc.preferences.useQuickfixForLocations": true,
+    "coc.preferences.extensionUpdateCheck": "never",
+    "suggest.snippetIndicator": "",
+    "suggest.noselect":true
+}
