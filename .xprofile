@@ -1,7 +1,5 @@
 picom -f &
 dunst &
-xautolock -time 10 -locker "systemctl suspend" &
-caffeine &
 udiskie --no-notify --tray &
 setxkbmap -layout us,gr -option "caps:escape" , "grp:alt_shift_toggle"
 xrandr --output HDMI-0 --auto --right-of DP-0 &
