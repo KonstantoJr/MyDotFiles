@@ -45,13 +45,6 @@ set $ws1 main
 set $ws2 other
 set $ws3 music
 
-# Bound workspaces when monitor is connected
-workspace 1 output eDP-1
-workspace 2 output eDP-1
-workspace 3 output HDMI-A-2
-workspace 4 output HDMI-A-2
-
-
 ### Idle configuration
 exec swayidle -w \
                before-sleep '~/.config/sway/scripts/before_sleep'
