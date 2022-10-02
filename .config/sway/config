@@ -239,5 +239,4 @@ bar {
 exec_always --no-startup-id mako -c ~/.config/mako/config
 # Clipboard Manager
 exec wl-paste -t text --watch clipman store --max-items=60 --histpath="~/.local/share/clipman.json"
-exec udiskie
 include /etc/sway/config.d/*
