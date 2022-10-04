@@ -74,3 +74,4 @@ fi
 # zsh extensions below
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source /usr/share/nvm/init-nvm.sh
