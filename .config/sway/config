@@ -41,9 +41,9 @@ output HDMI-A-2 pos +1920 0 res 2560x1440
 exec ~/.config/sway/scripts/dynamic_wallpaper
 
 # Set custom workspace names
-set $ws1 main
-set $ws2 other
-set $ws3 music
+set $ws1 1:main
+set $ws2 2:other
+set $ws3 3:music
 
 ### Idle configuration
 exec swayidle -w \
@@ -57,6 +57,8 @@ input type:touchpad {
     natural_scroll enabled
     tap enable
 }
+
+
 ### Key bindings
 #
 # Basics:
@@ -203,7 +205,7 @@ bindsym $mod+o exec killall -SIGUSR1 waybar
 #Lock
 bindsym $mod+Control+l exec swaylock -C ~/.config/swaylock/config 
 #Screenshot tool
-bindsym $mod+Shift+s exec --no-startup-id gscreenshot -s -c -f $HOME/Pictures/screenshots
+bindsym $mod+Shift+s exec --no-startup-id gscreenshot -s -c -f $HOME/media/Pictures/screenshots
 #Brightness Control
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set --min-value=2 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
