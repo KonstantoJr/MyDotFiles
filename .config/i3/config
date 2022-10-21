@@ -25,7 +25,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 
 # Dynamic background switch every 20 minutes
-exec --no-startup-id watch -n 1200 feh --randomize --bg-max '~/Pictures/bg_images/*' &
+exec --no-startup-id watch -n 1200 feh --randomize --bg-max '~/media/Pictures/bg_images/*' &
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5 && $refresh_i3status
@@ -192,7 +192,7 @@ bindsym $mod+F12 exec --no-startup-id "brightnessctl -q set 5%+"
 #Screenshot a spesific screen region and saving it to clipboard and $HOME/Pictures/Screenshot folder
 bindsym $mod+Shift+s exec --no-startup-id gscreenshot -s -c -f $HOME/Pictures/screenshots &
 #Change BG image, folder containing bg_images configured in nitrogen
-bindsym $mod+Control+b exec --no-startup-id feh --randomize --bg-max ~/Pictures/bg_images/* & 
+bindsym $mod+Control+b exec --no-startup-id feh --randomize --bg-max ~/media/Pictures/bg_images/* & 
 bindsym $mod+m exec rofi -modi emoji -show emoji -emoji-format '{emoji}' -theme ~/.config/rofi/launchers/type-4/style-3.rasi
 
 # clipboard tool
