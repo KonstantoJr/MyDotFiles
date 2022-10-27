@@ -39,7 +39,7 @@
         "path":"/",
         "interval": 30,
         "format": "{free} ",
-        "on-click": "alacritty --command sh -c 'duf && sleep 100'"
+        "on-click": "kitty sh -c 'duf && sleep 100'"
     },
     "memory": {
         "interval": 5,
