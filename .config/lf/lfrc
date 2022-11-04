@@ -1,7 +1,6 @@
 set ignorecase true
 set icons true
 
-cmd open $set -f; rifle -p 0 $fx
 map . set hidden!
 
 set previewer stpv
