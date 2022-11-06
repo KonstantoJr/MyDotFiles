@@ -20,6 +20,7 @@
         "memory",
         "cpu",
         "battery",
+        "battery#bat1",
         "backlight",
         "pulseaudio",
         "bluetooth",
@@ -33,7 +34,7 @@
     },
     "cpu": {
         "format": "{usage}% ",
-        "tooltip": false
+        
     },
     "disk": {
         "path":"/",
@@ -43,7 +44,7 @@
     },
     "memory": {
         "interval": 5,
-        "format": "{used:0.2f}GB/{total:0.2f}GB ",
+        "format": "{used:0.2f}GB ",
         "tooltip-format": "available {avail:0.2f}GB",
     },
     "network": {  
@@ -82,6 +83,24 @@
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
     },
     "battery": {
+        "bat":"BAT0",
+        "interval": 2,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity} {icon} ",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "format-charging": "{capacity} {icon} ﮣ",
+    },
+    "battery#bat1": {
+        "bat":"BAT1",
         "interval": 2,
         "states": {
             "warning": 30,
