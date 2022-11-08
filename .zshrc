@@ -31,11 +31,13 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
-
 # Enable zoxide
 eval "$(zoxide init zsh)"
 # zsh extensions below
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+#Git Prompt
+#source /usr/share/zsh/scripts/git-prompt.zsh 2>/dev/null
+#source /usr/share/git-prompt.zsh/examples/pure.zsh 2>/dev/null
 # NVM setup
 # source /usr/share/nvm/init-nvm.sh
