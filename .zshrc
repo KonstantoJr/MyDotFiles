@@ -36,6 +36,8 @@ eval "$(zoxide init zsh)"
 # zsh extensions below
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh 2>/dev/null
+
 # NVM SETUP
 #export NVM_LAZY=1
 #source /usr/share/nvm/init-nvm.sh
