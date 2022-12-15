@@ -180,6 +180,8 @@ bar {
         font pango:Mononoki Nerd  9
         status_command exec /home/konstantinos/.config/i3status/net-speed.sh  
 }
+
+default_border none
 #Custom Keybinds
 #Lock screen
 bindsym $mod+Control+l exec --no-startup-id "i3lock -c 000000"
