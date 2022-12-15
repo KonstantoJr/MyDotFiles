@@ -63,7 +63,7 @@ config push
 ### System Installation
 The following line contains the packages needed for system installation
 ```
-firefox git tldr man texlive-most alacritty zsh zsh-syntax-highlighting zsh-autosuggestions-git gscreenshot rofi xclip bashmount picom pulseaudio-ctl neovim xorg-xinit xorg-server gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord i3-wm i3status i3lock stremio bluez bluez-utils xautolock mons texlive-lang entr zathura-pdf-poppler rofi-emoji ttf-font-awesome ttf-gentium-basic ttf-jetbrains-mono docker docker-compose mariadb postgresql github-cli python-autopep8-git python-toml rsync sent skypeforlinux-stable-bin speedtest-cli sqlitebrowser playerctl 7-zip unrar jq pandoc perl-image-exiftool ntfs-3g exfat-utils dunst blueman feh nvim-packer-git glow mimi lf  
+firefox git tldr man texlive-most alacritty zsh zsh-syntax-highlighting zsh-autosuggestions-git gscreenshot rofi xclip bashmount picom pulseaudio-ctl neovim xorg-xinit xorg-server gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pcmanfm pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord i3-wm i3status i3lock stremio bluez bluez-utils xautolock mons texlive-lang entr zathura-pdf-poppler rofi-emoji ttf-font-awesome ttf-gentium-basic ttf-jetbrains-mono docker docker-compose mariadb postgresql github-cli python-autopep8-git python-toml rsync sent skypeforlinux-stable-bin speedtest-cli sqlitebrowser playerctl 7-zip unrar jq pandoc perl-image-exiftool ntfs-3g exfat-utils dunst blueman feh nvim-packer-git glow mimi lf nvm zsh-autocomplete-git
 ```
 Rust Installer
 ```
