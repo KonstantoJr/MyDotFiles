@@ -32,7 +32,7 @@ bindkey -s '^o' 'lfcd\n'
 alias config='/usr/bin/git --git-dir=/home/konstantinos/.cfg/ --work-tree=/home/konstantinos'
 
 # Enable zoxide :
-eval "$(zoxide init zsh)"
+# eval "$(zoxide init zsh)"
 # zsh extensions below
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
