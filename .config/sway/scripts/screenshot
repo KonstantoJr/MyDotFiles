@@ -3,6 +3,10 @@ SAVEDIR=${SWAY_INTERACTIVE_SCREENSHOT_SAVEDIR:=~/media/Pictures/screenshots}
 mkdir -p -- "$SAVEDIR"
 FILENAME="$SAVEDIR/$(date +'%Y-%m-%d-%H%M%S_screenshot.png')"
 EXPENDED_FILENAME="${FILENAME/#\~/$HOME}"
-grim -g "$(slurp)" $FILENAME
-wl-copy -t image/png < $FILENAME
-notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$EXPENDED_FILENAME"
+if grim -g "$(slurp)" $FILENAME;
+then 
+    wl-copy -t image/png < $FILENAME
+    notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$EXPENDED_FILENAME"
+else
+    notify-send "Screenshot" "Screenshot Cancelled"
+fi
