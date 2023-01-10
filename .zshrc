@@ -30,6 +30,9 @@ bindkey -s '^o' 'lfcd\n'
 ###############################################################
 #Config alias for git that stores my dots files
 alias config='/usr/bin/git --git-dir=/home/konstantinos/.cfg/ --work-tree=/home/konstantinos'
+# Upatras VPN
+alias upvpn='sudo openvpn --config /etc/openvpn/UPatras.ovpn --daemon'
+alias killvpn='sudo kill $(pidof openvpn)'
 
 # Enable zoxide :
 # eval "$(zoxide init zsh)"
