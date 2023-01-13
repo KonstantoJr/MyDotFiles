@@ -25,9 +25,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 
 # Dynamic background switch every 20 minutes
-#exec --no-startup-id watch -n 1200 feh --randomize --bg-max '~/media/Pictures/bg_images/*' &
-# Set a single wallpaper for dual screen setup
-exec --no-startup-id feh --bg-fill --no-xinerama '~/media/Pictures/bg_images/dual.png'
+exec --no-startup-id watch -n 1200 feh --randomize --bg-max '~/media/Pictures/bg_images/*' &
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 5 && $refresh_i3status
