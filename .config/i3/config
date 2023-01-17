@@ -184,7 +184,7 @@ bar {
 default_border none
 #Custom Keybinds
 #Lock screen
-bindsym $mod+Control+l exec --no-startup-id "i3lock -c 000000"
+bindsym $mod+Control+l exec --no-startup-id "i3lock -c 000000 & systemctl suspend"
 #Control Sound
 bindsym $mod+F1 exec --no-startup-id "/usr/bin/pulseaudio-ctl mute &"
 bindsym $mod+F2 exec --no-startup-id "/usr/bin/pulseaudio-ctl down & "
