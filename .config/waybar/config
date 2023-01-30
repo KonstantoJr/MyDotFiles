@@ -8,6 +8,7 @@
     "output" : "eDP-1",
 
     "modules-left": [
+        "sway/mode",
         "sway/workspaces",
         "sway/window",
     ],
@@ -27,6 +28,12 @@
         "sway/language",
         "tray"
     ],
+    "sway/mode": {
+
+    "format": " {}",
+
+    "max-length": 50
+    },
     "clock": {
         "interval": 1,
         "tooltip-format": "<big>{:%d %B %Y}</big>\n<tt><small>{calendar}</small></tt>",
