@@ -1,5 +1,6 @@
 ### Custom Keybinds
 - Current $mod = WinKey
+
 | Keys | Function |
 |---|---|
 |$mod + Shift + s| Takes screenshot of a specified area and saves it on clipboard and ~/Pictures/screenshots|
