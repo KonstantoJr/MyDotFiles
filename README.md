@@ -1,5 +1,5 @@
 ### Custom Keybinds
-Current $mod = WinKey
+- Current $mod = WinKey
 | Keys | Function |
 |---|---|
 |$mod + Shift + s| Takes screenshot of a specified area and saves it on clipboard and ~/Pictures/screenshots|
@@ -10,15 +10,16 @@ Current $mod = WinKey
 |$mod + Shift + e| Opens the power management menu|
 
 - Gromit-mpx Mode
+
 | Keys | Funciton |
 |---|---|
 |$mod+g| Enter the mode|
-| F9 | Toggle On/Off|
+|F9| Toggle On/Off|
 |Shift + F9| Clear Screen|
-|Control + F9 | Toggle Visibility|
-|Alt + F9 | Quit Gromit|
-| F8 | Undo |
-| Shift + F8 | Redo |
+|Control + F9| Toggle Visibility|
+|Alt + F9| Quit Gromit|
+|F8| Undo |
+|Shift + F8| Redo |
 
 ### If you want to install these config files to a new system follow these steps
 
