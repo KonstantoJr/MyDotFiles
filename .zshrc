@@ -34,12 +34,12 @@ alias config='/usr/bin/git --git-dir=/home/konstantinos/.cfg/ --work-tree=/home/
 alias upvpn='sudo openvpn --config /etc/openvpn/UPatras.ovpn --daemon'
 alias killvpn='sudo kill $(pidof openvpn)'
 
-# Enable zoxide :
-# eval "$(zoxide init zsh)"
 # zsh extensions below
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh 2>/dev/null
+# SSH Agent
+eval `keychain --eval id_rsa github`
 
 # NVM SETUP
 #export NVM_LAZY=1
