@@ -7,6 +7,7 @@ Current $mod = WinKey
 |$mod + Control + r| Press one to start recording the selected area, Press a second time to stop the recording|
 |$mod + Control + b | Randomly select another background|
 |$mod + o| Toggle showing/hiding waybar|
+|$mod + Shift + e| Opens the power management menu|
 ### If you want to install these config files to a new system follow these steps
 
 1. Prior to the installation make sure you have committed the alias to your .bashrc or .zsh:
