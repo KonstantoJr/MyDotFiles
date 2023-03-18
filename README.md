@@ -8,6 +8,18 @@ Current $mod = WinKey
 |$mod + Control + b | Randomly select another background|
 |$mod + o| Toggle showing/hiding waybar|
 |$mod + Shift + e| Opens the power management menu|
+
+- Gromit-mpx Mode
+| Keys | Funciton |
+|---|---|
+|$mod+g| Enter the mode|
+| F9 | Toggle On/Off|
+|Shift + F9| Clear Screen|
+|Control + F9 | Toggle Visibility|
+|Alt + F9 | Quit Gromit|
+| F8 | Undo |
+| Shift + F8 | Redo |
+
 ### If you want to install these config files to a new system follow these steps
 
 1. Prior to the installation make sure you have committed the alias to your .bashrc or .zsh:
@@ -62,7 +74,7 @@ config push
 ### System Installation
 The following line contains the packages needed for system installation
 ```
-firefox git tldr man texlive-most kitty zsh zsh-syntax-highlighting zsh-autosuggestions-git brightnessctl gscreenshot slurp grim sway-launcher-desktop clipman wl-clipboard caffeine-ng bashmount pulseaudio-ctl neovim gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord stremio bluez bluez-utils mons texlive-lang entr zathura-pdf-poppler wf-recorder ttf-font-awesome ttf-gentium-basic ttf-jetbrains-mono docker docker-compose feh flex gentium-plus-font github-cli mariadb postgresql pulseaudio-ctl python-autopep8-git python-toml rsync sent skypeforlinux-stable-bin speedtest-cli sqlitebrowser steam tikzit acpi mako mtpfs jmtpfs gvfs-mtp gvfs-gphoto2 sway waybar udiskie swaybg swayidle swaylock-effects-git xorg-xwayland ranger pulseaudio-bluetooth bluez-tools playerctl stpv-git lf pipewire xdg-desktop-portal xdg-desktop-portal-wlr glow nvim-packer-git nvm zsh-autocomplete-git wlogout
+firefox git tldr man texlive-most kitty zsh zsh-syntax-highlighting zsh-autosuggestions-git brightnessctl gscreenshot slurp grim sway-launcher-desktop clipman wl-clipboard caffeine-ng bashmount pulseaudio-ctl neovim gsfonts nerd-fonts-mononoki noto-fonts-emoji noto-fonts ttf-ms-fonts ttf-vista-fonts pavucontrol htop baobab visual-studio-code-bin gnome-keyring discord stremio bluez bluez-utils mons texlive-lang entr zathura-pdf-poppler wf-recorder ttf-font-awesome ttf-gentium-basic ttf-jetbrains-mono docker docker-compose feh flex gentium-plus-font github-cli mariadb postgresql pulseaudio-ctl python-autopep8-git python-toml rsync sent skypeforlinux-stable-bin speedtest-cli sqlitebrowser steam tikzit acpi mako mtpfs jmtpfs gvfs-mtp gvfs-gphoto2 sway waybar udiskie swaybg swayidle swaylock-effects-git xorg-xwayland ranger pulseaudio-bluetooth bluez-tools playerctl stpv-git lf pipewire xdg-desktop-portal xdg-desktop-portal-wlr glow nvim-packer-git nvm zsh-autocomplete-git wlogout gromit-mpx
 ```
 Rust Installer
 ```
