@@ -27,6 +27,8 @@ lfcd () {
     fi
 }
 bindkey -s '^o' 'lfcd\n'
+# Enable vim keybinds
+set -o vi
 ###############################################################
 #Config alias for git that stores my dots files
 alias config='/usr/bin/git --git-dir=/home/konstantinos/.cfg/ --work-tree=/home/konstantinos'
