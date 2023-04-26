@@ -43,8 +43,8 @@ exec swaybg -i /home/konstantinos/media/Pictures/bg_images/majorasmask.jpg -m fi
 # Set custom workspace names
 set $ws1 1:main
 set $ws2 2:other
-set $ws3 3:music
-set $ws4 4:other other
+set $ws3 3:other other
+set $ws4 4:music
 ### Idle configuration
 exec swayidle -w \
                before-sleep '~/.config/sway/scripts/before_sleep'
@@ -201,6 +201,7 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 #
+
 
 #
 # Gromit-mpx
