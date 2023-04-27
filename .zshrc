@@ -12,6 +12,7 @@ compinit
 # End of lines added by compinstall
 alias ls='ls -lhNF --color=auto --group-directories-first'
 alias vim='nvim'
+set -o vi
 ###############################################################
 #Custom alias for scripts
 #Config alias for git that stores my dots files
