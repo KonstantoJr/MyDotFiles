@@ -23,7 +23,10 @@ set $menu exec $term --class=launcher -e sway-launcher-desktop
 #font
 font pango:JetBrains Mono 12
 #disable window title bar
-default_border pixel 2 
+default_border none
+default_floating_border none
+titlebar_padding 1
+titlebar_border_thickness 0
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
