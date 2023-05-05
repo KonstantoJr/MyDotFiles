@@ -203,7 +203,7 @@ bindsym $mod+F3 exec --no-startup-id "/usr/bin/pulseaudio-ctl up & "
 bindsym $mod+F11 exec --no-startup-id "brightnessctl -q --min-value=2 set 5%- &"
 bindsym $mod+F12 exec --no-startup-id "brightnessctl -q set 5%+"
 #Screenshot a spesific screen region and saving it to clipboard and $HOME/Pictures/Screenshot folder
-bindsym $mod+Shift+s exec --no-startup-id gscreenshot -s -c -f $HOME/media/Pictures/screenshots &
+bindsym $mod+Shift+s exec --no-startup-id screenshot & 
 #Change BG image, folder containing bg_images configured in nitrogen
 bindsym $mod+Control+b exec --no-startup-id feh --randomize --bg-max ~/media/Pictures/bg_images/* & 
 bindsym $mod+m exec rofi -modi emoji -show emoji -emoji-format '{emoji}' -theme ~/.config/rofi/launchers/type-4/style-3.rasi
