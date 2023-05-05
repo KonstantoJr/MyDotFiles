@@ -1,0 +1,6 @@
+#!/bin/sh
+
+path="$HOME/media/Pictures/screenshots/$(date +%Y-%m-%dT%H:%M:%S).png"
+
+maim -s "$path"
+xclip -selection clipborad -t image/png "$path"
