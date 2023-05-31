@@ -41,8 +41,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh 2>/dev/null
 # SSH Agent
-eval `keychain --eval id_rsa github`
-
+eval `keychain --eval id_rsa github &>/dev/null`
 # NVM SETUP
 #export NVM_LAZY=1
 #source /usr/share/nvm/init-nvm.sh
