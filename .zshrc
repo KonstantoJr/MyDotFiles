@@ -11,6 +11,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 alias ls='ls -lhNF --color=auto --group-directories-first'
+alias ll='ls -la'
 alias vim='nvim'
 # lfcd
 lfcd () {
