@@ -9,6 +9,10 @@
 |$mod + Control + b | Randomly select another background|
 |$mod + o| Toggle showing/hiding waybar|
 |$mod + Shift + e| Opens the power management menu|
+|$mod + Shift + f| Opens firefox|
+|$mod + Shift + [| Plays previous track|
+|$mod + Shift + ]| Plays next track|
+|$mod + Shift + p| Play-pause track|
 
 - Gromit-mpx Mode
 
