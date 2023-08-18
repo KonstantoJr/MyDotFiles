@@ -9,10 +9,32 @@
     color: #dfbf8e;
 }
 
-#waybar {
+window#waybar {
     background-color: #282a36;
+    /*background: rgba(0,0,0,0);*/
     border-radius: 0px 0px 10px 10px;
 }
+
+/*
+.modules-left {
+    background-color: #282a36;    
+    margin-left: 0px;
+    padding: 0px 5px 0px 0px;
+}
+
+.modules-center {
+    background-color: #282a36;    
+    margin-left: 0px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+.modules-right {
+    background-color: #282a36;    
+    margin-left: 0px;
+    padding: 0px 0px 0px 5px;
+}
+*/
 
 #workspaces {
     margin: 5px;
