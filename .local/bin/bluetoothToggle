@@ -1,0 +1,8 @@
+#!/bin/bash
+
+STATE=$(bluetoothctl show | grep "PowerState: on")
+if [ -z "$STATE" ]; then
+    bluetoothctl power on
+else 
+    bluetoothctl power off
+fi 
