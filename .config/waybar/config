@@ -41,8 +41,8 @@
         // This option will switch between players on right click.
         //"on-click-right": "waybar-mpris --send player-next",
         // The options below will switch the selected player on scroll
-        //"on-scroll-up": "waybar-mpris --send player-next",
-        //"on-scroll-down": "waybar-mpris --send player-prev",
+        "on-scroll-up": "waybar-mpris --send player-next",
+        "on-scroll-down": "waybar-mpris --send player-prev",
         // The options below will go to next/previous track on scroll
         "on-click-right": "waybar-mpris --send next",
         "on-click-middle": "waybar-mpris --send prev",
@@ -55,7 +55,7 @@
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
                     "mode"          : "month",
-                    "mode-mon-col"  : 3,
+                    "mode-mon-col"  : 2,
                     "weeks-pos"     : "right",
                     "on-scroll"     : 1,
                     "on-click-right": "mode",
