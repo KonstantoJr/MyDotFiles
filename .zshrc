@@ -46,10 +46,3 @@ eval `keychain -q --eval id_rsa github`
 # NVM SETUP
 #export NVM_LAZY=1
 #source /usr/share/nvm/init-nvm.sh
-
-# bun completions
-[ -s "/home/konstantinos/.bun/_bun" ] && source "/home/konstantinos/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
