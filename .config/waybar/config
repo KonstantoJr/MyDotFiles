@@ -17,6 +17,7 @@
     ],
     "modules-right": [
         "network",
+        "network#vpn",
         //"disk",
         "memory",
         //"cpu",
@@ -90,7 +91,17 @@
         "format": "{used:0.2f}GB ",
         "tooltip-format": "available {avail:0.2f}GB",
     },
-    "network": {  
+    "network#vpn": { 
+        "interface" : "sest006-defr004",
+	    "format": "VPN connected",
+        "format-disconnected": "VPN down",
+
+        "tooltip-format": "{ipaddr}\n{essid}",
+        "tooltip-format-disconnected": "click to activate",
+        "on-click":  "~/.local/bin/checkVpnState sest006-defr004",
+        "max-length": 15
+    },
+    "network": { 
 	    "format": "{ifname}",
     	"format-wifi": "{essid} ",
     	"format-ethernet": "{essid} ",
