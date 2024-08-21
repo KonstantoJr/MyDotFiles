@@ -1,0 +1,10 @@
+#!/bin/sh
+interface=$1
+state="$(nmcli -f GENERAL.STATE connection show $interface)"
+if [ $? -eq 0 ]; then 
+    if [ "$state" == "" ]; then
+        nmcli connection up $interface;
+    else 
+        nmcli connection down $interface;
+    fi
+fi 
