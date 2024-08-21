@@ -45,4 +45,4 @@ source /usr/share/zsh/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh 2>/de
 eval `keychain -q --eval id_rsa github`
 # NVM SETUP
 #export NVM_LAZY=1
-#source /usr/share/nvm/init-nvm.sh
+source /usr/share/nvm/init-nvm.sh
