@@ -250,6 +250,8 @@ bar {
 # Notification Manager
 exec_always --no-startup-id mako -c ~/.config/mako/config
 #
+#Polkit agent
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # Clipboard Manager
 exec wl-paste -t text --watch clipman store --max-items=60 --histpath="~/.local/share/clipman.json"
 include /etc/sway/config.d/*
